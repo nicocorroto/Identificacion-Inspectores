@@ -1,0 +1,132 @@
+h4 {
+  text-align: center;
+}
+
+.img-logo {
+  width: 30%;
+  border-radius: 50%;
+  transform: translateX(110%) translateY(50%);
+  border: 4px solid yellowgreen;
+  filter: brightness(1.1);
+}
+
+.false {
+  border: 4px solid red;
+}
+
+
+.cont-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.cont-card2 {
+  background-color: #1F89F6;
+  border-radius: 0 0 40% 40%;
+  transform: translateY(-10%);
+  width: 100%;
+}
+
+
+.cont-img {
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 50%;
+  border: none;
+  border-radius: 0;
+  transform: translateX(50%) translateY(50%);
+}
+
+.cont-action {
+  margin: 0;
+  background-color: #c0c0c0;
+  max-height: 110px;
+  width: 90%;
+  height: auto;
+  border-radius: 16px;
+  text-align: center;
+  border: 1.5px solid whitesmoke;
+}
+
+.cont-data {
+  margin-top: 4rem;
+}
+
+.content-tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  color: #0f0f0f;
+}
+
+.tabs {
+  position: relative;
+  width: 90%;
+  list-style: none;
+  box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.1);
+  background-color: #dadada;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 150px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.active{
+  background: #1F89F6;
+  border-radius: 20px;
+}
+
+.indicador {
+  position: absolute;
+  display: flex;
+  height: 54px;
+  width: 150px;
+  background-color: #7425CF;
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+  box-shadow: 0px 10px 20px -3px #7425CF;
+
+}
+
+.tab-content {
+  position: relative;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

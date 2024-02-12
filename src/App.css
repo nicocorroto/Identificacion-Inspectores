@@ -1,0 +1,28 @@
+
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+/* para  celular */
+@media (width > 500px) {
+  body {
+    /* background-color: red; */
+  }
+}
+
+
+@media (width > 1000px) {
+  body {
+    /* background-color: blue; */
+  }
+}
