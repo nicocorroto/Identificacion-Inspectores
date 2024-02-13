@@ -1,0 +1,65 @@
+[
+    {
+      "numeroAfiliado": "17409",
+      "nombreCompleto": "GONZALEZ, Carlos",
+      "funcion": "INSPECTOR",
+      "documento": "13847474",
+      "activo": 1,
+      "urlImagen": null,
+      "hashLagajo": "09ecbcfd0d08f69b3c29a4c6098ec926c8b9d278f902dde6551cefd04b935437"
+    },
+    {
+      "numeroAfiliado": "17433",
+      "nombreCompleto": "VEGA, Ruben Antonio",
+      "funcion": "INSPECTOR",
+      "documento": "13628252",
+      "activo": 1,
+      "urlImagen": null,
+      "hashLagajo": "fe3c747f0fad420d3b662dfe8bbdd32fd5bcad6c0f0f9ac17cde868b3908897c"
+    },
+    {
+      "numeroAfiliado": "17713",
+      "nombreCompleto": "FARA, Roberto",
+      "funcion": "INSPECTOR",
+      "documento": "16132799",
+      "activo": 1,
+      "urlImagen": null,
+      "hashLagajo": "519b74a02a32927ee8af772a01038d36736eb2aaeb604f8a15719710d72ccc04"
+    },
+    {
+      "numeroAfiliado": "17776",
+      "nombreCompleto": "JIMENEZ, Rolando",
+      "funcion": "INSPECTOR",
+      "documento": "16811303",
+      "activo": 1,
+      "urlImagen": null,
+      "hashLagajo": "c96a5d8ae5170d9ab1ece6a261b881357860a04dc8d76bc2ca0619cc4d4787ea"
+    },
+    {
+      "numeroAfiliado": "43736",
+      "nombreCompleto": "Romano Cesar Isaias",
+      "funcion": "INSPECTOR",
+      "documento": "16811303",
+      "activo": 1,
+      "urlImagen": "/public/QR-ISAIAS.png",
+      "hashLagajo": "c96a5d8ae5170d9ab1ece6a261b881357860a04dc8d76bc2ca0619cc4d4787ea"
+    },
+    {
+      "numeroAfiliado": "43737",
+      "nombreCompleto": "Bono Franco Humberto",
+      "funcion": "INSPECTOR",
+      "documento": "16811303",
+      "activo": 1,
+      "urlImagen": null,
+      "hashLagajo": "c96a5d8ae5170d9ab1ece6a261b881357860a04dc8d76bc2ca0619cc4d4787ea"
+    },
+    {
+      "numeroAfiliado": "43738",
+      "nombreCompleto": "Diaz Gonzales Facundo",
+      "funcion": "INSPECTOR",
+      "documento": "16811303",
+      "activo": 1,
+      "urlImagen": null,
+      "hashLagajo": "c96a5d8ae5170d9ab1ece6a261b881357860a04dc8d76bc2ca0619cc4d4787ea"
+    }
+  ]

@@ -1,9 +1,11 @@
 [
     {
-        "numeroAfiliado": "21625",
-        "nombreCompleto": "RODRIGUEZ, Jose",
+        "numeroAfiliado": "43736",
+        "nombreCompleto": "Romano Cesar Isaias",
         "funcion": "INSPECTOR",
-        "documento": "23238258",
-        "activo": 1
-    }
+        "documento": "16811303",
+        "activo": 0,
+        "urlImagen": "string",
+        "hashLagajo": "c96a5d8ae5170d9ab1ece6a261b881357860a04dc8d76bc2ca0619cc4d4787ea"
+      }
 ]

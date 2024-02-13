@@ -1,0 +1,27 @@
+.FormImg{
+    width: auto;
+    height: auto;
+    background: rgb(159, 173, 187);
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.FormImg label{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+}
+.FormImg input{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.btn-Añadir{
+    margin-top: .5rem;
+    background-color: rgb(140, 196, 246);
+    color: white;
+}

@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getAgenteById, getAgenteByNum } from '../../services/servicesAgentes'
 
+//http://localhost:5212/api/inspectores?hashLagajo=3d0ddec1ca8b4863e0618d5527ff6075d9f131960115c8e2a6384f09eb09a272'
+
 function CardAgente() {
   const [dataAgente, setDataAgente] = useState(null)
   const { id } = useParams()
@@ -19,6 +21,7 @@ function CardAgente() {
   },[])
 
   function cargarAgente() {
+    console.log(id)
     getAgenteByNum(id).then(res => setDataAgente(res))
     console.log(dataAgente)
   }

@@ -10,11 +10,14 @@ export function getAgenteById(id) {
 }
 
 export function getAgenteByNum(num) {
-  //const options = { method: 'GET' };
-
   //return fetch(`http://localhost:5212/api/inspectores/${num}`, options)
-  return fetch('http://localhost:5173/agentes.json')
-    .then(response => response.json())
+  
+  
+  const options = { method: 'GET' };
+  console.log(num)
+  
+  return fetch(`http://localhost:5173/agentes.json`, options)
+  .then(response => response.json())
     .then(response => {
       console.log(response)
       const agente = response.find(a => a.id == num)
