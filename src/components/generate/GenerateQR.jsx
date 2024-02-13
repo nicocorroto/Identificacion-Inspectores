@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './GenerateQR.css'
 import QRCode from 'qrcode'
+import cryptoJs from 'crypto-js';
+
 
 
 function GenerateQR() {
@@ -11,18 +13,33 @@ function GenerateQR() {
     const GenerateCode = (e) => {
         e.preventDefault()
 
-        QRCode.toDataURL(dni, {
-            width: 350,
-            color: {
-                dark: '#282c34',
-                light: '#EEEEEEFF'
-            }
-        }, (err, dni) => {
-            if (err) {
-                console.log(err)
-            }
-            setQr(dni)
-        })
+        if (!dni) {
+            console.error('Ingrese un DNI válido.');
+            return;
+        }
+
+        try {
+            const hashedDni = cryptoJs.SHA256(dni).toString(cryptoJs.enc.Hex);
+            console.log(hashedDni)
+            
+            const qrDataUrl = `http://localhost:5173/agentes/${hashedDni}`;
+
+            QRCode.toDataURL(qrDataUrl, {
+                width: 350,
+                color: {
+                    dark: '#282c34',
+                    light: '#EEEEEEFF'
+                }
+            }, (err, qrDataUrl) => {
+                if (err) {
+                    console.log(err)
+                }
+                setQr(qrDataUrl)
+                console.log(qrDataUrl)
+            })
+        } catch (error) {
+            console.error('Error al calcular el hash:', error);
+        }
     }
 
     return (
