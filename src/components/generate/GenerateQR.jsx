@@ -24,6 +24,8 @@ function GenerateQR() {
             
             const qrDataUrl = `http://localhost:5173/agentes/${hashedDni}`;
 
+            
+
             QRCode.toDataURL(qrDataUrl, {
                 width: 350,
                 color: {
