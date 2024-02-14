@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 //'http://localhost:5212/api/inspectores/list?pagina=1&sizePagina=4'
 //.then(text => setQr("data:image/png;base64," + text))
+//"/public/QR-ISAIAS.png"
 
 function ListInspectors() {
 
@@ -15,6 +16,7 @@ function ListInspectors() {
     const [qr, setQr] = useState('')
 
     const GenerateCode = (IDNI) => {
+        
         if (!IDNI) {
             console.error('Ingrese un DNI válido.');
             return;
