@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './ListInspectors.css'
 import { getListInpectores } from '../../services/servicesList'
 import QRCode from 'qrcode'
-import dataRead from '../../../public/QR.json'
+// import dataRead from '../../../public/QR.json'
 import { Link } from 'react-router-dom'
 
 //'http://localhost:5212/api/inspectores/list?pagina=1&sizePagina=4'
@@ -62,8 +62,8 @@ function ListInspectors() {
             <h1>Listado de inspectores</h1>
             <div className="card-container">
                 {
-                    dataRead !== null ?
-                        dataRead.map((datos, i) => (
+                    data !== null ?
+                        data.map((datos, i) => (
                             <div className='card' key={i}>
                                 <div className='card-content'>
                                     {

@@ -35,13 +35,13 @@ function CardAgente() {
             <div>
               <img src={logo} alt="imagen perfil " className='logo' />
             </div>
-            <img src={img1} className={`img-logo ${dataAgente != null && dataAgente[0].activo == 1 ? '' : 'false'}`} alt="imagen perfil " />
+            <img src={img1} className={`img-logo ${dataAgente != null && dataAgente.activo == 1 ? '' : 'false'}`} alt="imagen perfil " />
           </div>
         </div>
         <div className='cont-data'>
-          <h3>{(dataAgente != null && dataAgente[0].nombreCompleto)}</h3>
-          <h4>{(dataAgente != null && dataAgente[0].numeroAfiliado)}</h4>
-          <h4>{(dataAgente != null && dataAgente[0].funcion)}</h4>
+          <h3>{(dataAgente != null && dataAgente.nombreCompleto)}</h3>
+          <h4>{(dataAgente != null && dataAgente.numeroAfiliado)}</h4>
+          <h4>{(dataAgente != null && dataAgente.funcion)}</h4>
         </div>
         <div className='cont-action'>
           <div className='content-tabs'>

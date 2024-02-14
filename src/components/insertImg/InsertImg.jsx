@@ -1,6 +1,7 @@
 import './InsertImg.css'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { postInsertImg } from '../../services/servicesAgentes'
 
 function InsertImg() {
 
@@ -20,12 +21,19 @@ function InsertImg() {
         }
     };
 
+    function InsertImg() {
+        postInsertImg(numeroAfiliado, imagen).then(res => console.log(res))
+    }
+
     return (
         <form className='FormImg'>
             <label htmlFor="">Insertar Imagen para el inspector: {numeroAfiliado} </label>
             <input type="file" onChange={InserImg} accept="image/*" />
             {imagen && <img src={imagen} alt="Imagen mostrada" />}
-            <button className='btn-Añadir'>
+            <button 
+                onClick={InsertImg} 
+                className='btn-Añadir'
+            >
                 Añadir
             </button>
         </form>

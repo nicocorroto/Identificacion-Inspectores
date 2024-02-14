@@ -14,7 +14,7 @@ function App() {
       <Route path='/agentes/:id' element={ <CardAgente /> } />
       <Route path='/scaner' element={ <ViewAgentes /> } />
       <Route path='/lista' element={ <ListInspectors /> } />
-      <Route path='/Insert/:numeroAfiliado' element={ <InsertImg /> } />
+      <Route path='/insert/:numeroAfiliado' element={ <InsertImg /> } />
     </Routes>
   )
 }
