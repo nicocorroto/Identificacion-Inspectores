@@ -9,20 +9,20 @@ import { getAgenteById, getAgenteByNum } from '../../services/servicesAgentes'
 
 function CardAgente() {
   const [dataAgente, setDataAgente] = useState(null)
-  const { id } = useParams()
+  const { numeroAfiliado } = useParams()
 
-  const [activeTab, setactiveTab] = useState(0);
-  const seleccionar = (index) => {
-    setactiveTab(index);
-  };
+  // const [activeTab, setactiveTab] = useState(0);
+  // const seleccionar = (index) => {
+  //   setactiveTab(index);
+  // };
 
   useEffect(() => {
+    console.log(numeroAfiliado)
     cargarAgente()
   },[])
 
   function cargarAgente() {
-    console.log(id)
-    getAgenteByNum(id).then(res => setDataAgente(res))
+    getAgenteByNum(numeroAfiliado).then(res => setDataAgente(res))
     console.log(dataAgente)
   }
 
@@ -43,7 +43,7 @@ function CardAgente() {
           <h4>{(dataAgente != null && dataAgente.numeroAfiliado)}</h4>
           <h4>{(dataAgente != null && dataAgente.funcion)}</h4>
         </div>
-        <div className='cont-action'>
+        {/* <div className='cont-action'>
           <div className='content-tabs'>
             <ul className="tabs">
               <li
@@ -65,7 +65,7 @@ function CardAgente() {
               {activeTab === 1 && <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, blanditiis? Neque quibusdam facilis fugiat? Quis.</p>}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

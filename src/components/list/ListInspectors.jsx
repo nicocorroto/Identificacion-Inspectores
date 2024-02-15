@@ -26,7 +26,7 @@ function ListInspectors() {
             //const hashedDni = cryptoJs.SHA256(IDNI).toString(cryptoJs.enc.Hex);
             //console.log(hashedDni)
 
-            const qrDataUrl = `http://localhost:5173/agentes/${IDNI}`;
+            const qrDataUrl = `http://172.20.255.15/inspectores/${IDNI}`;
             console.log(qrDataUrl)
             QRCode.toDataURL(qrDataUrl, {
                 width: 350,
@@ -70,7 +70,7 @@ function ListInspectors() {
                                         datos.urlImagen === null ?
                                             ''
                                             :
-                                            <img src={datos.urlImagen} />
+                                            <img src={'http://172.20.254.38:8080'+datos.urlImagen} />
                                     }
                                     <p>Numero de afiliado: {datos.numeroAfiliado}</p>
                                     <p>Nombre: {datos.nombreCompleto}</p>

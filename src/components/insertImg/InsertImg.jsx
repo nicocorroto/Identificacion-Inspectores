@@ -22,14 +22,19 @@ function InsertImg() {
     };
 
     function InsertImg() {
-        postInsertImg(numeroAfiliado, imagen).then(res => console.log(res))
+        postInsertImg(numeroAfiliado, imagen).then(res => console.log(res.status))
     }
 
     return (
         <form className='FormImg'>
             <label htmlFor="">Insertar Imagen para el inspector: {numeroAfiliado} </label>
-            <input type="file" onChange={InserImg} accept="image/*" />
-            {imagen && <img src={imagen} alt="Imagen mostrada" />}
+            <input type="file" onChange={(e)=>setImagen(e.target.files[0])} accept="image/*" />
+            {/* {
+                imagen && 
+                setTimeout(() => {
+                    <img src={imagen} alt="Imagen mostrada" />
+                }, 1000)
+            } */}
             <button 
                 onClick={InsertImg} 
                 className='btn-Añadir'

@@ -16,7 +16,7 @@ export function getAgenteByNum(num) {
   const options = { method: 'GET' };
   console.log(num)
 
-  return fetch(`http://172.20.254.38:8080/api/inspector?hashLagajo=f63408a66d0e1f2e2bcf165aa809419703fc6f3fd3a42350b83dc2c300d13aca`, options)
+  return fetch(`http://172.20.254.38:8080/api/inspector?hashLagajo=${num}`, options)
     .then(response => response.json())
     .then(response => {
       // console.log(response)
@@ -44,9 +44,8 @@ export function postInsertImg(Num, img) {
   console.log("----- Imagen -----")
   console.log(img)
 
-  debugger
-  fetch("http://localhost:5212/api/subi-imagen", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result) )
+  fetch("http://172.20.254.38:8080/api/subi-imagen", requestOptions)
+    .then(response => response.json())
+    .then(result => console.log(result))
     .catch(error => console.log('error', error));
 }
