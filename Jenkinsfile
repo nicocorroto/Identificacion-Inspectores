@@ -51,7 +51,7 @@ agent any
         GITHUB_CREDENCIALES_DEPLOY = "dim-desarrollo"
 
         SONARQUBE_CREDENCIALES = 'sonarqube'
-        PUERTO_EXTERNO = 3010
+        PUERTO_EXTERNO = 3020
 
         IDENTIFICADOR_UNICO_BUILD = 'front-inspectores' //agregado a mano, ver si se hace de otra manera
         IDENTIFICADOR_IMAGEN = 'front-inspectores'
