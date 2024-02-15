@@ -26,7 +26,8 @@ function ListInspectors() {
             //const hashedDni = cryptoJs.SHA256(IDNI).toString(cryptoJs.enc.Hex);
             //console.log(hashedDni)
 
-            const qrDataUrl = `http://172.20.255.15/inspectores/${IDNI}`;
+            //Cambiar a manera dinamica
+            const qrDataUrl = `http://172.20.255.15:3010/inspectores/${IDNI}`;
             console.log(qrDataUrl)
             QRCode.toDataURL(qrDataUrl, {
                 width: 350,

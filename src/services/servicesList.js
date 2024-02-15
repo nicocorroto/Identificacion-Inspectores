@@ -1,5 +1,5 @@
-// const URL = "http://172.20.255.15:2020"
-const URL = "http://172.20.254.38:8080"
+const URL = "http://172.20.255.15:2020"
+// const URL = "http://172.20.254.38:8080"
 
 
 export function getListInpectores(){
