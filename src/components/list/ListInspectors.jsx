@@ -77,7 +77,7 @@ function ListInspectors() {
                                     <p>DNI: {datos.documento}</p>
                                     <p>Funcion {datos.funcion}</p>
                                     <div className='content-btn'>
-                                        <a onClick={() => GenerateCode(datos.hashLagajo)} href={qr} download={`${datos.nombreCompleto}-qr.png`} className='Descargar-qr'>
+                                        <a onClick={() => GenerateCode(datos.hashLagajo)} href={qr} download={`${datos.nombreCompleto}-${datos.numeroAfiliado}-qr.png`} className='Descargar-qr'>
                                             Generar QR
                                         </a>
                                         <Link to={`/Insert/${datos.numeroAfiliado}`}>

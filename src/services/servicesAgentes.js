@@ -1,3 +1,6 @@
+// const URL = "http://172.20.255.15:2020"
+const URL = "http://172.20.254.38:8080"
+
 export function getAgenteById(id) {
   return fetch('http://localhost:5173/agentes.json')
     .then(res => res.json())
@@ -16,7 +19,7 @@ export function getAgenteByNum(num) {
   const options = { method: 'GET' };
   console.log(num)
 
-  return fetch(`http://172.20.254.38:8080/api/inspector?hashLagajo=${num}`, options)
+  return fetch(`${URL}/api/inspector?hashLagajo=${num}`, options)
     .then(response => response.json())
     .then(response => {
       // console.log(response)
@@ -44,7 +47,7 @@ export function postInsertImg(Num, img) {
   console.log("----- Imagen -----")
   console.log(img)
 
-  fetch("http://172.20.254.38:8080/api/subi-imagen", requestOptions)
+  fetch(`${URL}/api/subi-imagen`, requestOptions)
     .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
