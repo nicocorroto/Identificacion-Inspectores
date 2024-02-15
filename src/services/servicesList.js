@@ -3,7 +3,7 @@ const URL = "http://172.20.255.15:2020"
 
 
 export function getListInpectores(){
-    return fetch(`${URL}/api/inspectores/list?pagina=1&sizePagina=64`)
+    return fetch(`${URL}/api/inspectores/list?pagina=1&sizePagina=90`)
         .then(res => res.json())
         .then(res => {
             console.log(res)
