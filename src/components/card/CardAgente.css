@@ -1,22 +1,21 @@
-/* h4 {
+h4 {
 
   text-align: center;
-}
-
-.img-logo {
-  width: 30%;
-  border-radius: 50%;
-  transform: translateX(110%) translateY(50%);
-  border: 4px solid yellowgreen;
-  filter: brightness(1.1);
 }
 
 .false {
   border: 4px solid red;
 }
 
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #c0c0c0;
+}
 
-.cont-card {
+.cont-card{
+  width: 100%;
+  /* height: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,30 +23,73 @@
   color: black;
 }
 
-.cont-card2 {
+.cont-logos {
+  width: 100%;
+  padding-bottom: .8rem;
+  margin-top: 0;
   background-color: #1F89F6;
   border-radius: 0 0 40% 40%;
   transform: translateY(-10%);
-  width: 100%;
-}
-
-
-.cont-img {
-  width: 100%;
-  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .logo {
-  width: 50%;
+  width: 40%;
   border: none;
   border-radius: 0;
-  transform: translateX(50%) translateY(50%);
+  transform: translateX(25%) translateY(3px);
 }
 
+.muni{
+  /* width: 60%; */
+  height: 8rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
+  align-items: center;
+  border-radius: 0 0 40% 40%;
+  transform: translateY(-5px) translateX(-20px);
+}
+/* --------- Img user + informacion ---------*/
+
+.cont-data {
+  width: 80%;
+  height: auto;
+  /* border: 1px solid #e7e7e7;
+  box-shadow: 3px 3px 3px rgb(130, 130, 130); */
+  margin-bottom: 1rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-user{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.data-user p {
+  padding-bottom: 0;
+}
+
+.Funciones{
+  text-align: center;
+}
+
+.img-logo {
+  width: 30%;
+  border-radius: 50%;
+  /* transform: translateX(110%) translateY(50%); */
+  border: 4px solid yellowgreen;
+  filter: brightness(1.1);
+}
 .cont-action {
   margin: 0;
   background-color: #c0c0c0;
@@ -59,9 +101,7 @@
   border: 1.5px solid whitesmoke;
 }
 
-.cont-data {
-  margin-top: 4rem;
-}
+
 
 .content-tabs {
   position: relative;
@@ -130,21 +170,32 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
-.container{
+}
+
+
+
+/* .container{
   width: 100%;
   height: 80vh;
   margin: 0;
   background: thistle;
 }
-.cont-card{
+.cont-card2{
   width: 90%;
   height: 100%;
   background: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.cont-img{
 
+.cont-img{
+  width: 100%;
+  height: 10rem;
+  background: teal;
 }
+.cont-img img{
+  width: 60%;
+  height: 8rem;
+} */
