@@ -27,9 +27,8 @@ function CardAgente() {
   }
 
   return (
-    <>
+    <div className='container'> 
       <div className='cont-card'>
-
         <div className='cont-img'>
           <div className="cont-card2">
             <div>
@@ -67,7 +66,7 @@ function CardAgente() {
           </div>
         </div> */}
       </div>
-    </>
+    </div>
   )
 }
 

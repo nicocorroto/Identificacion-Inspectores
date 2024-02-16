@@ -1,4 +1,5 @@
-h4 {
+/* h4 {
+
   text-align: center;
 }
 
@@ -129,4 +130,21 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+.container{
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  background: thistle;
+}
+.cont-card{
+  width: 90%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cont-img{
+
 }
