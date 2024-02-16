@@ -2,54 +2,15 @@ import { useEffect, useState } from 'react'
 import './ListInspectors.css'
 import { getListInpectores } from '../../services/servicesList'
 import QRCode from 'qrcode'
-// import dataRead from '../../../public/QR.json'
 import { Link } from 'react-router-dom'
 
-//'http://localhost:5212/api/inspectores/list?pagina=1&sizePagina=4'
-//.then(text => setQr("data:image/png;base64," + text))
-//"/public/QR-ISAIAS.png"
-// <img src={'http://172.20.254.38:8080'+datos.urlImagen} />
-
-//const hashedDni = cryptoJs.SHA256(IDNI).toString(cryptoJs.enc.Hex);
-//console.log(hashedDni)
-
-//Cambiar a manera dinamica
 
 function ListInspectors() {
 
     const [data, setData] = useState(null)
 
     const [qr, setQr] = useState('')
-
-    // const GenerateCode = (IDNI) => {
-
-    //     if (!IDNI) {
-    //         console.error('Ingrese un DNI válido.');
-    //         return;
-    //     }
-
-    //     try {
-
-    //         const qrDataUrl = `http://172.20.255.15:3010/inspectores/${IDNI}`;
-    //         console.log(qrDataUrl)
-    //         QRCode.toDataURL(qrDataUrl, {
-    //             width: 350,
-    //             color: {
-    //                 dark: '#282c34',
-    //                 light: '#EEEEEEFF'
-    //             }
-    //         }, (err, qrDataUrl) => {
-    //             if (err) {
-    //                 console.log(err)
-    //             }
-    //             setQr(qrDataUrl)
-    //             console.log(qrDataUrl)
-    //         })
-    //     } catch (error) {
-    //         console.error('Error al calcular el hash:', error);
-    //     }
-    // }
-
+ 
     const GenerateCode = (IDNI) => {
         if (!IDNI) {
             console.error('Ingrese un DNI válido.');
@@ -57,7 +18,7 @@ function ListInspectors() {
         }
 
         try {
-            const qrDataUrl = `http://dimsmt:3010/inspectores/${IDNI}`;
+            const qrDataUrl = `http://dimsmt.gob.ar:3010/inspectores/${IDNI}`;
             console.log(qrDataUrl);
 
             let generatedQr;
@@ -85,7 +46,7 @@ function ListInspectors() {
         Generar()
     }, [])
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
     function Generar() {
         console.log("object")
         getListInpectores()

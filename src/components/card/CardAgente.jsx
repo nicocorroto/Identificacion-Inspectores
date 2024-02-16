@@ -33,7 +33,7 @@ function CardAgente() {
         <div className='cont-img'>
           <div className="cont-card2">
             <div>
-              <img src={logo} alt="imagen perfil " className='logo' />
+              <img src={'http://dimsmt.gob.ar:3010'+logo} alt="imagen perfil " className='logo' />
             </div>
             <img src={img1} className={`img-logo ${dataAgente != null && dataAgente.activo == 1 ? '' : 'false'}`} alt="imagen perfil " />
           </div>
