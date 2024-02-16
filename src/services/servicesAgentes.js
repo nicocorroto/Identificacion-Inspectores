@@ -1,6 +1,6 @@
-const URL = "http://172.20.255.15:2020"
+// const URL = "http://172.20.255.15:2020"
 // const URL = "http://172.20.254.38:8080"
-// const URL = "http://dimsmt.gob.ar:3010"
+const URL = "http://dimsmt.gob.ar:3010"
 
 export function getAgenteById(id) {
   return fetch('http://localhost:5173/agentes.json')
