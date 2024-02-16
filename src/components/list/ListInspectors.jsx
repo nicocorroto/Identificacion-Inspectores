@@ -59,6 +59,12 @@ function ListInspectors() {
         console.log(data)
     }
 
+    function CambiarNombre(data) {
+        const string = data.replace(/,/g, ''); // Reemplaza todos los espacios
+        const nombre = string.replace(/ /g, '-');  // Reemplaza todas las comas
+        return nombre;
+    }
+
     return (
         <>
             <h1>Listado de inspectores</h1>
@@ -83,7 +89,7 @@ function ListInspectors() {
                                     <p>Funcion {datos.funcion}</p>
                                     <div className='content-btn'>
                                         {
-                                            qr[i] === '' ? "" : <a href={qr[i]} download={`${datos.nombreCompleto}-${datos.numeroAfiliado}-qr.png`} className='Descargar-qr'>
+                                            qr[i] === '' ? "" : <a href={qr[i]} download={`${CambiarNombre(datos.nombreCompleto)}-${datos.numeroAfiliado}-qr.png`} className='Descargar-qr'>
                                                 Descargar QR
                                             </a>
                                         }
