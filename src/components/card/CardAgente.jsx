@@ -1,6 +1,7 @@
 import './CardAgente.css'
 import logo from '../../assets/logo_municipalidad.webp'
 import img1 from '../../assets/img1.webp'
+import muni from '../../../public/chala.webp'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getAgenteById, getAgenteByNum } from '../../services/servicesAgentes'
@@ -19,55 +20,53 @@ function CardAgente() {
   useEffect(() => {
     console.log(numeroAfiliado)
     cargarAgente()
-  },[])
+  }, [])
 
   function cargarAgente() {
-    getAgenteByNum(numeroAfiliado).then(res => setDataAgente(res))
+    getAgenteById().then(res => setDataAgente(res))
     console.log(dataAgente)
   }
 
   return (
-    <>
+    <div className='container'>
       <div className='cont-card'>
-
-        <div className='cont-img'>
-          <div className="cont-card2">
-            <div>
-              <img src={logo} alt="imagen perfil " className='logo' />
-            </div>
-            <img src={dataAgente !== null && dataAgente.urlImagen !== null ? 'http://dimsmt.gob.ar:3010/'+dataAgente.urlImagen : img1} className={`img-logo ${dataAgente != null && dataAgente.activo == 1 ? '' : 'false'}`} alt="imagen perfil " />
+        <div className="cont-logos">
+          <div>
+            <img src={logo} alt="imagen perfil " className='logo' />
+          </div>
+          <div>
+            <img src={muni} alt="" className='muni' />
           </div>
         </div>
-        <div className='cont-data'>
-          <h3>{(dataAgente != null && dataAgente.nombreCompleto)}</h3>
-          <h4>{(dataAgente != null && dataAgente.numeroAfiliado)}</h4>
-          <h4>{(dataAgente != null && dataAgente.funcion)}</h4>
-        </div>
-        {/* <div className='cont-action'>
-          <div className='content-tabs'>
-            <ul className="tabs">
-              <li
-                className={activeTab == 0 ? "active" : ""}
-                onClick={() => seleccionar(0)}
-              >
-                Info 1
-              </li>
-              <li
-                className={activeTab == 1 ? "active" : ""}
-                onClick={() => seleccionar(1)}
-              >
-                info 2
-              </li>
-              
-            </ul>
-            <div className="tab-content">
-              {activeTab === 0 && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla beatae maiores pariatur non praesentium cum?</p>}
-              {activeTab === 1 && <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, blanditiis? Neque quibusdam facilis fugiat? Quis.</p>}
-            </div>
-          </div>
+        {/* <div className='img-User'>
         </div> */}
+        <div className='cont-data'>
+          <img src={img1} className={`img-logo ${dataAgente != null && dataAgente.activo == 1 ? '' : 'false'}`} alt="imagen perfil " />
+          <div className='data-user'>
+            <div>
+              <p>Nombre:
+                <strong>{(dataAgente != null && dataAgente.nombreCompleto)}</strong>
+              </p>
+              <p>Numero Afiliado:
+                <strong>{(dataAgente != null && dataAgente.numeroAfiliado)}</strong>
+              </p>
+              <p>Funcion:
+                <strong>{(dataAgente != null && dataAgente.funcion)}</strong>
+              </p>
+            </div>
+            <div>
+              <p>DNI: <strong>{(dataAgente != null && dataAgente.documento)}</strong></p>
+              <p>Oficina: <strong>{(dataAgente != null && dataAgente.oficina)} </strong></p>
+              <p>Tarea: <strong> {(dataAgente != null && dataAgente.tarea)} </strong></p>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+      <hr />
+      <div className='Funciones'>
+        <p>No hay datos</p>
+      </div>
+    </div>
   )
 }
 

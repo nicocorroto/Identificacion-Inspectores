@@ -1,11 +1,14 @@
 [
-    {
-        "numeroAfiliado": "43736",
-        "nombreCompleto": "Romano Cesar Isaias",
-        "funcion": "INSPECTOR",
-        "documento": "16811303",
-        "activo": 1,
-        "urlImagen": "string",
-        "hashLagajo": "c96a5d8ae5170d9ab1ece6a261b881357860a04dc8d76bc2ca0619cc4d4787ea"
-      }
+  {
+    "numeroAfiliado": "20274",
+    "nombreCompleto": "AHUMADA CHECA, Lucila",
+    "funcion": "INSPECTOR",
+    "documento": "20178953",
+    "activo": 1,
+    "urlImagen": null,
+    "qrBase64": null,
+    "tarea": null,
+    "oficina": "Libre deuda",
+    "hashLagajo": "8617e0467139713af137517448d2251154eb9e977f2c1ad87d36eef28042bef9"
+  }
 ]
