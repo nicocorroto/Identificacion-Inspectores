@@ -23,7 +23,9 @@ function CardAgente() {
   }, [])
 
   function cargarAgente() {
-    getAgenteByNum().then(res => setDataAgente(res))
+    console.log("---- Afiliado ----")
+    console.log(numeroAfiliado)
+    getAgenteByNum(numeroAfiliado).then(res => setDataAgente(res))
     console.log(dataAgente)
   }
 

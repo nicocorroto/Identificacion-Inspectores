@@ -20,9 +20,10 @@ export function getAgenteByNum(num) {
 
 
   const options = { method: 'GET' };
+  console.log("---- Afiliado ----")
   console.log(num)
 
-  return fetch(`${URL}/api/inspector?hashLagajo=${num}`, options)
+  return fetch(`${URLIMG}/api/inspector?hashLagajo=${num}`, options)
     .then(response => response.json())
     .then(response => {
       // console.log(response)
