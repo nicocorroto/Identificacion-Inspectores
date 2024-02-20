@@ -58,8 +58,8 @@ h4 {
 .cont-data {
   width: 80%;
   height: auto;
-  /* border: 1px solid #e7e7e7;
-  box-shadow: 3px 3px 3px rgb(130, 130, 130); */
+  border: 1px solid #e7e7e7;
+  box-shadow: 3px 3px 3px rgb(130, 130, 130); 
   margin-bottom: 1rem;
   padding: .5rem;
   display: flex;
@@ -173,29 +173,24 @@ li {
 }
 
 
-
-/* .container{
-  width: 100%;
-  height: 80vh;
-  margin: 0;
-  background: thistle;
-}
-.cont-card2{
-  width: 90%;
-  height: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+@media(width < 700px){
+  .container{
+    width: 100%;
+    height: auto;
+    background: #c0c0c0;
+  }
+  .cont-data{
+    width: 90%; 
+  }
 }
 
-.cont-img{
-  width: 100%;
-  height: 10rem;
-  background: teal;
+@media(width > 1000px){
+  .container{
+    width: 100%;
+    height: auto;
+    background: #c0c0c0;
+  }
+  .cont-data{
+    width: 60%; 
+  }
 }
-.cont-img img{
-  width: 60%;
-  height: 8rem;
-} */

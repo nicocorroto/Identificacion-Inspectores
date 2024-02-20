@@ -57,7 +57,7 @@ function CardAgente() {
             <div>
               <p>DNI: <strong>{(dataAgente != null && dataAgente.documento)}</strong></p>
               <p>Oficina: <strong>{(dataAgente != null && dataAgente.oficina)} </strong></p>
-              
+              <p>Tarea: <strong> {(dataAgente != null && dataAgente.tarea)} </strong></p>
             </div>
           </div>
         </div>
