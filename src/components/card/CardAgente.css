@@ -187,7 +187,7 @@ li {
 @media(width > 1000px){
   .container{
     width: 100%;
-    height: auto;
+    height: 100vh;
     background: #c0c0c0;
   }
   .cont-data{
