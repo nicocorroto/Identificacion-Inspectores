@@ -1,6 +1,8 @@
-const URL = "http://172.20.255.15:3010"
+// const URL = "http://172.20.255.15:3010"
 // const URL = "http://172.20.254.38:8080"
-// const URL = "http://dimsmt.gob.ar:3010"
+const URL = "http://dimsmt.gob.ar:3010"
+
+const URLIMG = "http://172.20.255.15:3010"
 
 export function getAgenteById(id) {
   return fetch('http://localhost:3000/agentes.json')
@@ -48,7 +50,7 @@ export function postInsertImg(Num, img) {
   console.log("----- Imagen -----")
   console.log(img)
 
-  fetch(`${URL}/api/subi-imagen`, requestOptions)
+  fetch(`${URLIMG}/api/subi-imagen`, requestOptions)
     .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
